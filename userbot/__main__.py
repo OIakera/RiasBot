@@ -27,11 +27,16 @@ for module_name in ALL_MODULES:
 LOGS.info(f"You are running Rias Userbot on {repo_lenk}")
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
-output = (f"`☆ Rias is Up and Running!`\n\n"
+output = (
+    f"`☆ Rias is Up and Running!`\n"
+    f"=====================\n"
     f"`✮ User :` {DEFAULTUSER}\n"
     f"`✮ Python :` {python_version()}\n"
     f"`✮ UserBot :` {USERBOT_VERSION}\n"
-    f"`✮ Telethon :` {version.__version__}\n")
+    f"`✮ Telethon :` {version.__version__}\n"
+    f"=====================\n"
+    f"☆ Use .help for more info\n"
+)
 
 async def start():
     if BOTLOG:
