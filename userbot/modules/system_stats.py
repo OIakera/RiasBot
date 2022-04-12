@@ -21,11 +21,13 @@ import psutil
 from git import Repo
 from telethon import __version__, version
 
-from userbot import ALIVE_LOGO, ALIVE_MESSAGE, ALIVE_NAME, CMD_HELP, TIMEOUT, USERBOT_VERSION, StartTime, bot
+from userbot import ALIVE_LOGO, ALIVE_MESSAGE, ALIVE_NAME, OWNER_ID, CMD_HELP, TIMEOUT, USERBOT_VERSION, StartTime, bot
 from userbot.events import register
 
 # ================= CONSTANT =================
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
+DEFAULTUSER = str(ALIVE_NAME)
+USERID = str(OWNER_ID)
+MENTION = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 repo = Repo()
 modules = CMD_HELP
 # ============================================
@@ -181,7 +183,7 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     uptime = await get_readable_time((time.time() - StartTime))
     DEFAULT_MESSAGE = (f"☆ Rias is up and running!\n\n"
-        f"`✮ User :` {DEFAULTUSER}\n"
+        f"`✮ User :` {MENTION}\n"
         f"`✮ Branch :` {repo.active_branch.name}\n"
         f"`✮ Bot Uptime :` {uptime} `\n"
         f"`✮ Bot Version :` {USERBOT_VERSION}\n"

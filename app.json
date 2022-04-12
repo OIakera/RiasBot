@@ -18,6 +18,10 @@
       "description": "Name to show in .alive message",
       "required": false
     },
+    "OWNER_ID": {
+      "description": "Set your telegram id to show profile which will be displayed on .alive messages",
+      "required": false
+    },
     "ALIVE_LOGO": {
       "description": "Show Image/Logo in .alive message. Fill value of image your link image, use telegra.ph / i.ibb.co to get your own image",
       "required": false

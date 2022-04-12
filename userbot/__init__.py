@@ -142,6 +142,11 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT") or "False")
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME") or None
 
+# Owner id to show profile link of given id as owner
+OWNER_ID = os.environ.get("OWNER_ID", None)
+if OWNER_ID:
+    OWNER_ID = int(OWNER_ID)
+
 # Default .alive logo
 ALIVE_LOGO = str(os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/be0929663608a28dfc409.mp4")
 
