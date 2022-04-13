@@ -89,7 +89,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#UPDATE \n" "Your Cosmic UB was successfully updated"
+                BOTLOG_CHATID, "#UPDATE \n" "Your Rias UB was successfully updated"
             )
 
     else:
@@ -109,7 +109,7 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#UPDATE \n" "Your Cosmic Userbot was successfully updated"
+            BOTLOG_CHATID, "#UPDATE \n" "Your Rias Userbot was successfully updated"
         )
 
     # Spin a new instance of bot

@@ -1,23 +1,19 @@
-<p align="center">
-   <a href="https://github.com/SkyLab-Devs/CosmicUserbot"><img src="https://github.com/SkyLab-Devs/CosmicUserbot/raw/starfire/resources/cosmic.jpg" alt="Fizi Logo" width=600px></a>
-   <br>
-   <br>
-</p>
+# Rias UserBot
+![7d887b494d75699b6a764b069fe7cbfb](https://user-images.githubusercontent.com/62814971/131668793-8ec224ce-58f8-4cf9-bb39-bf91dde665f3.gif)
 
-# Cosmic Userbot
+## What is it?
 
-[![Build](https://img.shields.io/github/workflow/status/SkyLab-Devs/CosmicUserbot/FailedChecker?style=for-the-badge)](https://github.com/SkyLab-Devs/CosmicUserbot/actions "build")
+Rias UserBot is a modular Telegram userbot running on Python 3.8+ with an SQLAlchemy database.
 
-![Spec](https://img.shields.io/badge/Made%20with-LOVE-black?style=for-the-badge)
-
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+Based on [Cosmic](https://github.com/SkyLab-Devs/CosmicUserbot) UserBot.
+I made this just for myself with the module that I actually use.
 
 ## Disclaimer
 ```
 #include <std/disclaimer.h>
 /**
-      Your Telegram account may get banned.
-      I am not responsible for any improper use of this bot
+      Your Telegram account may get Fucked-Up.
+      I'm not responsible for any shit use of this bot.
       This bot is intended for the purpose of having fun with memes,
       as well as efficiently managing groups.
       You ended up spamming groups, getting reported left and right,
@@ -29,28 +25,10 @@
 /**
 ```
 
-## Generate String Session
+## Setting up
 
-### Run on repl.it
-[![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=flat-square&logo=repl.it)](https://session.frost2k5.repl.run)
-
-### Run on your terminal
-```
-curl -L https://git.io/Jyiwj > session_gen.sh && bash session_gen.sh
-```
-
-## How To Host?
-
-### Deploy on Heroku
-Make sure you have an account of heroku and follow all the steps required.
-
-<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/SkyLab-Devs/CosmicUserbot/tree/demon"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
-
-## Groups and Support
-
-For discussion, bug reporting, and help, you can join [Cosmic Userbot](https://t.me/CosmicUserbotChat) support group.
-For further guide you can read this [Guide](https://frost2k5.games/ProjectFizilion).
-
+- [Generate session string](https://session.frost2k5.repl.run)
+- [Deploy on Heroku](https://heroku.com/deploy?template=https://github.com/akirasup3r/RiasBot/tree/main)
 
 ## Credits
 

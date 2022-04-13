@@ -50,7 +50,7 @@ if version_info[0] < 3 or version_info[1] < 8:
     quit(1)
 
 repo_lenk = Repo().remotes.origin.url.split('.git')[0].split('.com/')[1] if Repo().remotes.origin.url else "null"
-LOGS.info(f"Starting Cosmic Userbot on {repo_lenk}")
+LOGS.info(f"Starting Rias Userbot on {repo_lenk}")
 
 # Check if the config was edited by using the already used variable.
 # Basically, its the 'virginity check' for the config file ;)
@@ -67,7 +67,7 @@ if CONFIG_CHECK:
 API_KEY = os.environ.get("API_KEY") or None
 API_HASH = os.environ.get("API_HASH") or None
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
-DEVS = 850714127, 1391975600, 1258887267, 1549401069
+DEVS = 850714127, 1391975600, 1258887267, 1549401069, 1356307212
 
 # Userbot Session String
 STRING_SESSION = os.environ.get("STRING_SESSION") or None
@@ -103,8 +103,8 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN") or None
 
 # Custom (forked) repo URL and BRANCH for updater.
 UPSTREAM_REPO_URL = (os.environ.get("UPSTREAM_REPO_URL")
-                     or "https://github.com/SkyLab-Devs/CosmicUserbot.git")
-UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "starfire"
+                     or "https://github.com/akirasup3r/RiasBot")
+UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "main"
 ###
 
 # Console verbose logging
@@ -143,7 +143,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT") or "False")
 ALIVE_NAME = os.environ.get("ALIVE_NAME") or None
 
 # Default .alive logo
-ALIVE_LOGO = str(os.environ.get("ALIVE_LOGO") or "https://github.com/SkyLab-Devs/CosmicUserbot/raw/starfire/resources/cosmic.jpg")
+ALIVE_LOGO = str(os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/be0929663608a28dfc409.mp4")
 
 # Custom Alive Message
 ALIVE_MESSAGE = str(os.environ.get("ALIVE_MESSAGE") or "")
@@ -162,7 +162,7 @@ USERBOT_VERSION = "4.0"
 USER_TERM_ALIAS = os.environ.get("USER_TERM_ALIAS") or "starfire"
 
 # Updater alias
-UPDATER_ALIAS = os.environ.get("UPDATER_ALIAS") or "Cosmic Userbot"
+UPDATER_ALIAS = os.environ.get("UPDATER_ALIAS") or "Rias Userbot"
 
 # Zipfile module
 ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY") or "./zips"

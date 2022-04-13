@@ -1,4 +1,9 @@
 FROM ghcr.io/skylab-devs/cosmic:squashed
-RUN mkdir /cosmos && chmod 777 /cosmos && git clone https://github.com/SkyLab-Devs/CosmicUserbot -b starfire /cosmos
-WORKDIR /cosmos
-CMD ["python3","-m","userbot"]
+
+RUN set -ex \
+      && git clone -b main https://github.com/akirasup3r/RiasBot /root/userbot \
+      && chmod 777 /root/userbot
+
+WORKDIR /root/userbot
+
+CMD ["python3", "-m", "userbot"]

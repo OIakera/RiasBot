@@ -1,7 +1,7 @@
 {
-  "name": "Cosmic Userbot",
+  "name": "RiasBot",
   "description": "A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database.",
-  "logo": "https://github.com/SkyLab-Devs/CosmicUserbot/raw/demon/resources/Fizilion.png",
+  "logo": "https://telegra.ph/file/64a6c7f87bba9abfe5554.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,11 +9,19 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/SkyLab-Devs/CosmicUserbot",
-  "website": "https://t.me/CosmicUserbotChat",
-  "success_url": "https://t.me/CosmicUserbotChat",
+  "repository": "https://github.com/akirasup3r/RiasBot",
+  "website": "#",
+  "success_url": "#",
   "stack": "container",
   "env": {
+    "ALIVE_NAME": {
+      "description": "Name to show in .alive message",
+      "required": false
+    },
+    "ALIVE_LOGO": {
+      "description": "Show Image/Logo in .alive message. Fill value of image your link image, use telegra.ph / i.ibb.co to get your own image",
+      "required": false
+    },
     "API_KEY": {
       "description": "Get this value from my.telegram.org.",
       "required": true
@@ -154,15 +162,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default profile bio.",
-      "value": "[PM = Report Spam] I ❤ ️Fizilion",
-      "required": false
-    },
-    "ALIVE_NAME": {
-      "description": "Name to show in .alive message",
-      "required": false
-    },
-    "ALIVE_LOGO": {
-      "description": "Show Image/Logo in .alive message. Fill value of image your link image, use telegra.ph / i.ibb.co to get your own image",
+      "value": "[PM = Report Spam] I Love Rias",
       "required": false
     },
     "TIMEOUT": {

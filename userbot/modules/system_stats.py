@@ -180,17 +180,13 @@ async def bot_ver(event):
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     uptime = await get_readable_time((time.time() - StartTime))
-    DEFAULT_MESSAGE = (
-        f"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n"
-        f"  **Cosmic UB** is up and running...\n"
-        f">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n"
-        f"• `Owner          : {DEFAULTUSER} `\n"
-        f"• `Loaded modules : {len(modules)} `\n"
-        f"• `Branch         : {repo.active_branch.name} `\n"
-        f"• `Bot Version    : {USERBOT_VERSION} `\n"
-        f"• `Bot Uptime     : {uptime} `\n\n"
-        f"Use `.help` for more info\n"
-        )
+    DEFAULT_MESSAGE = (f"☆ Rias is up and running!\n\n"
+        f"`✮ User :` {DEFAULTUSER}\n"
+        f"`✮ Branch :` {repo.active_branch.name}\n"
+        f"`✮ Bot Uptime :` {uptime} `\n"
+        f"`✮ Bot Version :` {USERBOT_VERSION}\n"
+        f"`✮ Loaded modules :` {len(modules)}\n"
+        f"☆ Use .help for more info\n")
     output = ALIVE_MESSAGE or DEFAULT_MESSAGE
     if ALIVE_LOGO:
         try:
