@@ -17,10 +17,12 @@ async def speedtest(event):
     await event.edit("`Running speed test...`")
 
     test = Speedtest()
+    await event.edit("`Choosing best server...`")
     test.get_best_server()
+    await event.edit("`Testing download speed...`")
     test.download()
+    await event.edit("`Testing upload speed...`")
     test.upload()
-    test.results.share()
     result = test.results.dict()
 
     msg = (
@@ -35,41 +37,7 @@ async def speedtest(event):
         f"`Sponsor:` `{result['server']['sponsor']}`\n\n"
     )
 
-    await event.client.send_file(
-        event.chat_id,
-        result["share"],
-        caption=msg,
-    )
-    await event.delete()
-    
-
-@register(outgoing=True, pattern="^.speed$")
-async def speedtst(spd):
-    """ For .speed command, use SpeedTest to check server speeds. """
-    await spd.edit("`Running speed test . . .`")
-    test = Speedtest()
-
-    test.get_best_server()
-    test.download()
-    test.upload()
-    test.results.share()
-    result = test.results.dict()
-
-    await spd.edit(
-        "`"
-        "Started at "
-        f"{result['timestamp']} \n\n"
-        "Download "
-        f"{humanbytes(result['download'])} \n"
-        "Upload "
-        f"{humanbytes(result['upload'])} \n"
-        "Ping "
-        f"{result['ping']} \n"
-        "ISP "
-        f"{result['client']['isp']}"
-        "`"
-    )
-
+    await event.edit(msg)    
 
 def speed_convert(size):
     """
@@ -118,9 +86,7 @@ CMD_HELP.update(
 )
 CMD_HELP.update(
     {
-        "speedtest": ".speed\
-            \nUsage: Does a speedtest and shows results.\
-            \n.speedtest\
-            \nUsage: Does a speedtest with more data and shows results."
+        "speedtest": ".speedtest\
+            \nUsage: Does a speedtest and shows results."
     }
 )
