@@ -28,7 +28,7 @@ I made this just for myself with the module that I actually use.
 ## Setting up
 
 - [Generate session string](https://session.frost2k5.repl.run)
-- [Deploy on Heroku](https://heroku.com/deploy?template=https://github.com/akirasup3r/RiasBot/tree/main)
+- [Deploy on Heroku](https://heroku.com/deploy?template=https://github.com/akirasup3r/RiasBot/tree/master)
 
 ## Credits
 

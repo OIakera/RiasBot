@@ -1,7 +1,7 @@
 FROM ghcr.io/skylab-devs/cosmic:squashed
 
 RUN set -ex \
-      && git clone -b main https://github.com/akirasup3r/RiasBot /root/userbot \
+      && git clone -b master https://github.com/akirasup3r/RiasBot /root/userbot \
       && chmod 777 /root/userbot
 
 WORKDIR /root/userbot

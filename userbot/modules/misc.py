@@ -68,7 +68,7 @@ async def killdabot(reboot):
 async def reedme(event):
     await event.edit(
         "Here's something for you to read:\n"
-        "\n[Rias UB's' README.md file](https://github.com/akirasup3r/RiasBot/blob/main/README.md)"
+        "\n[Rias UB's' README.md file](https://github.com/akirasup3r/RiasBot/blob/master/README.md)"
 )
 
 
@@ -107,7 +107,7 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
     """ For .deploy command, just returns the heroku deploying URL. """
     await wannasee.edit(
-        "[Click here](https://heroku.com/deploy?template=https://github.com/akirasup3r/RiasBot/tree/main) to deploy Rias Userbot on Heroku."
+        "[Click here](https://heroku.com/deploy?template=https://github.com/akirasup3r/RiasBot/tree/master) to deploy Rias Userbot on Heroku."
     )
 
 @register(outgoing=True, pattern="^.support$")
